@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>face web login</title>
+</head>
+<body>
+     <video id="video" width="440" height="280" autoplay></video>
+     <br>
+
+     <button onclick="capture()">YOU CAPTURE PHOTO FACE</button>
+     <br>
+     <canvas id="canvas" width="400" height="280" style="display: none;"></canvas>
+     <br>
+     <h3>REGISTER ACCOUNT</h3>
+     <label for="name">Your name: </label>
+     <input type="text" id="name" required name="">
+     <br>
+     <button onclick="register()">REGISTER</button>
+     <button onclick="login()">login now</button>
+
+     <script src="{{url_for('static', filename='js/script.js')}}"></script>
+</body>
+</html>
